@@ -167,7 +167,7 @@ function initHero() {
         constructor() { this.reset(); }
         reset() { this.x = Math.random() * W; this.y = Math.random() * H; this.vx = (Math.random() - 0.5) * 0.5; this.vy = (Math.random() - 0.5) * 0.5; this.r = Math.random() * 2 + 0.5; this.o = Math.random() * 0.5 + 0.2; }
         update() { this.x += this.vx; this.y += this.vy; if (this.x < 0 || this.x > W) this.vx *= -1; if (this.y < 0 || this.y > H) this.vy *= -1; }
-        draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(59,130,246,${this.o})`; ctx.fill(); }
+        draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(42,82,152,${this.o})`; ctx.fill(); }
     }
 
     const count = Math.min(80, Math.floor(W * H / 15000));
@@ -181,7 +181,7 @@ function initHero() {
                 const dx = particles[i].x - particles[j].x, dy = particles[i].y - particles[j].y, d = Math.sqrt(dx * dx + dy * dy);
                 if (d < 150) {
                     ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y);
-                    ctx.strokeStyle = `rgba(59,130,246,${0.1 * (1 - d / 150)})`; ctx.lineWidth = 0.5; ctx.stroke();
+                    ctx.strokeStyle = `rgba(42,82,152,${0.1 * (1 - d / 150)})`; ctx.lineWidth = 0.5; ctx.stroke();
                 }
             }
         }
