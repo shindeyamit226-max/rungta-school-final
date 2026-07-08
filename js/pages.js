@@ -91,13 +91,29 @@ PAGES['leadership'] = {
     tag: 'Leadership', heading: 'Our Leadership', sub: 'Guiding the institution with vision and commitment',
     render: () => `
     <section class="section"><div class="container">
-        <div class="section-header"><span class="section-tag">GDR Society</span><h2 class="section-title">G.D. Rungta <em>Educational Society</em></h2></div>
-        <div class="content-card"><p>The G.D. Rungta Educational Society has been at the forefront of education in Chhattisgarh since 1999. Under its umbrella, multiple institutions serve thousands of students with a commitment to academic excellence and holistic development.</p></div>
+        <div class="section-header"><span class="section-tag">GDR Society</span><h2 class="section-title">The GDR Society — <em>Once a Spark, Now a Beacon</em></h2></div>
+        <div class="content-card"><p>Every family takes pride in certain inherent values that are passed down through generations. For the Rungta family, philanthropy has been that enduring legacy — a virtue upheld and strengthened over time.</p><p>Shri Rai Saheb Richhpalji Rungta, the distinguished scion of the family, along with Shri Ghanshyam Dasji Rungta, served as the torchbearers of this noble tradition. With sincerity and dedication, they initiated the mission of providing quality education to the people of Durg, Bhilai, and neighbouring regions. Their vision was to spark educational reform and uplift this part of the country. That small spark they ignited has now grown into a guiding beacon.</p><p>The GD Rungta Educational Society began its journey in 1999 with an initial intake of just 240 students. Today, the institution now nurtures more than 4,000 students from different parts of the country and across the globe.</p></div>
         <div class="section-header" style="margin-top:3rem"><h2 class="section-title">Board of <em>Governors</em></h2></div>
         <div class="leadership-grid">
-            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">SR</div><div class="leader-avatar-ring"></div></div><h3>Sanjay Rungta</h3><span class="leader-role">Chairman</span><p>Guiding the institution with vision and commitment to educational excellence.</p></div>
-            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">SR</div><div class="leader-avatar-ring"></div></div><h3>Saket Rungta</h3><span class="leader-role">Director</span><p>Driving innovation and growth across the Rungta educational ecosystem.</p></div>
-            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">DS</div><div class="leader-avatar-ring"></div></div><h3>Mrs. Deepti Singh</h3><span class="leader-role">Principal</span><p>Leading with passion, ensuring every child receives the best education and care.</p></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">SR</div><div class="leader-avatar-ring"></div></div><h3>Sanjay Rungta</h3><span class="leader-role">Chairman</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">SR</div><div class="leader-avatar-ring"></div></div><h3>Dr. Saket Rungta</h3><span class="leader-role">Member (Finance)</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">HR</div><div class="leader-avatar-ring"></div></div><h3>Harsha Rungta</h3><span class="leader-role">Member</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">PR</div><div class="leader-avatar-ring"></div></div><h3>Pallavi Rungta Geol</h3><span class="leader-role">Member</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">MC</div><div class="leader-avatar-ring"></div></div><h3>Manas Chatterjee</h3><span class="leader-role">Member</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">VG</div><div class="leader-avatar-ring"></div></div><h3>Vijay Kumar Gupta</h3><span class="leader-role">Member</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">CR</div><div class="leader-avatar-ring"></div></div><h3>Mr. Chaturbhuj Rathi</h3><span class="leader-role">Member</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">AJ</div><div class="leader-avatar-ring"></div></div><h3>Arvind Kumar Jain</h3><span class="leader-role">Member</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">RA</div><div class="leader-avatar-ring"></div></div><h3>Dr. Rajkumar Agrawal</h3><span class="leader-role">Member</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">JS</div><div class="leader-avatar-ring"></div></div><h3>Dr. Jawahar Surisetty</h3><span class="leader-role">Member</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">SA</div><div class="leader-avatar-ring"></div></div><h3>Dr. Shajid Ansari</h3><span class="leader-role">Member</span></div>
+        </div>
+        <div class="section-header" style="margin-top:3rem"><h2 class="section-title">Principal's <em>Team</em></h2></div>
+        <div class="leadership-grid">
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">DS</div><div class="leader-avatar-ring"></div></div><h3>Mrs. Deepti Singh</h3><span class="leader-role">Principal</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">HP</div><div class="leader-avatar-ring"></div></div><h3>Himanshu Shekhar Pandey</h3><span class="leader-role">Senior Wing Coordinator</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">AG</div><div class="leader-avatar-ring"></div></div><h3>Arpita Ghosh</h3><span class="leader-role">Middle Wing Coordinator</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">GS</div><div class="leader-avatar-ring"></div></div><h3>Garima Sharma</h3><span class="leader-role">Primary Wing Coordinator</span></div>
+            <div class="leader-card stagger" data-tilt><div class="leader-avatar"><div class="leader-avatar-placeholder">SP</div><div class="leader-avatar-ring"></div></div><h3>Sonu Patni</h3><span class="leader-role">Pre-Primary Coordinator</span></div>
         </div>
     </div></section>`
 };
@@ -144,6 +160,7 @@ PAGES['admission'] = {
         <div class="content-card"><h3>Documents for Admission</h3><ul class="content-list"><li>Countersigned Original Transfer Certificate of the Previous school</li><li>Photocopy of the Annual Exam Mark Statement of the Previous class</li><li>Two passport size photographs in School Uniform (RPS)</li><li>Caste Certificate (SC/ST/OBC), if applicable</li><li>Medical Certificate in the prescribed proforma</li><li>Duly Filled in Hostel Form (in duplicate), if applicable</li><li>Bank Account details of the child</li></ul></div>
         <div class="content-card"><h3>Withdrawal & Refund</h3><ul class="content-list"><li>Parents must give 1 month's notice in writing and obtain acknowledgement from the school.</li><li>A student who drops out in the middle of the term forfeits the claim of fees.</li><li>Caution Money will be refunded after deducting all dues.</li><li>Transfer Certificate will be issued not before 15 days after receiving the application.</li><li>School Fees once Paid are not Refundable.</li><li>For withdrawal of transport services, one month's written notice is essential.</li></ul></div>
         <div class="content-card" id="fees"><h3>Fee Structure</h3><p>For detailed fee structure for Indian students (CBSE), please download the fee structure document.</p><a href="https://rungtapublicschool.ac.in/downloads/RPS_fee_2026.pdf" target="_blank" class="btn btn-primary" style="margin-top:1rem"><span>Download Fee Structure</span><i data-lucide="download"></i></a></div>
+        <div class="content-card"><h3>Admission Enquiry</h3><p>For admission enquiries, please fill the online enquiry form or contact us directly.</p><div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem"><a href="https://docs.google.com/forms/d/e/1FAIpQLSedSXjN7MioScm3T0EMpqvWgIH7-OtNX12MlHQwE-sWs4urVg/viewform" target="_blank" class="btn btn-primary"><span>Admission Enquiry Form</span><i data-lucide="external-link"></i></a><a href="https://myrungta.com/cricket_academy_registration_form_2025/registration_form.php" target="_blank" class="btn btn-secondary"><span>Register Online</span><i data-lucide="external-link"></i></a><a href="tel:+919229344486" class="btn btn-secondary"><i data-lucide="phone"></i><span>Call 9229344486</span></a></div></div>
     </div></section>`
 };
 
@@ -279,6 +296,38 @@ PAGES['pastoral'] = {
             <div class="schedule-item"><span class="schedule-time">07:00 PM</span><span class="schedule-activity">Supervised Prep Hours</span></div>
             <div class="schedule-item"><span class="schedule-time">08:30 PM</span><span class="schedule-activity">Dinner</span></div>
             <div class="schedule-item"><span class="schedule-time">09:00 PM</span><span class="schedule-activity">TV time / Self study</span></div>
+            <div class="schedule-item"><span class="schedule-time">10:00 PM</span><span class="schedule-activity">Lights Out</span></div>
+        </div>
+        <div class="schedule" style="margin-top:2rem">
+            <h3>Saturday Schedule</h3>
+            <div class="schedule-item"><span class="schedule-time">06:00 AM</span><span class="schedule-activity">Wake–up bell & Freshening up</span></div>
+            <div class="schedule-item"><span class="schedule-time">06:00 AM</span><span class="schedule-activity">Jogging / Yoga / Gym</span></div>
+            <div class="schedule-item"><span class="schedule-time">07:10 AM</span><span class="schedule-activity">Milk time</span></div>
+            <div class="schedule-item"><span class="schedule-time">07:40 AM</span><span class="schedule-activity">Weekly Test</span></div>
+            <div class="schedule-item"><span class="schedule-time">09:00 AM</span><span class="schedule-activity">Activity / Sports Block at School</span></div>
+            <div class="schedule-item"><span class="schedule-time">01:30 PM</span><span class="schedule-activity">Lunch for Boarders</span></div>
+            <div class="schedule-item"><span class="schedule-time">02:00 PM</span><span class="schedule-activity">Rest / Personal Work / Leisure</span></div>
+            <div class="schedule-item"><span class="schedule-time">05:00 PM</span><span class="schedule-activity">Tea & Snacks</span></div>
+            <div class="schedule-item"><span class="schedule-time">05:30 PM</span><span class="schedule-activity">Games & Sports</span></div>
+            <div class="schedule-item"><span class="schedule-time">07:00 PM</span><span class="schedule-activity">Evening Prep</span></div>
+            <div class="schedule-item"><span class="schedule-time">08:30 PM</span><span class="schedule-activity">Dinner</span></div>
+            <div class="schedule-item"><span class="schedule-time">10:00 PM</span><span class="schedule-activity">Lights Out</span></div>
+        </div>
+        <div class="schedule" style="margin-top:2rem">
+            <h3>Sunday & Holiday Schedule</h3>
+            <div class="schedule-item"><span class="schedule-time">07:00 AM</span><span class="schedule-activity">Wake–up bell</span></div>
+            <div class="schedule-item"><span class="schedule-time">08:30 AM</span><span class="schedule-activity">Breakfast</span></div>
+            <div class="schedule-item"><span class="schedule-time">09:30 AM</span><span class="schedule-activity">Personal time / House chores</span></div>
+            <div class="schedule-item"><span class="schedule-time">10:00 AM</span><span class="schedule-activity">Library / Prep</span></div>
+            <div class="schedule-item"><span class="schedule-time">11:00 AM</span><span class="schedule-activity">Activity & Project</span></div>
+            <div class="schedule-item"><span class="schedule-time">12:00 PM</span><span class="schedule-activity">Entertainment</span></div>
+            <div class="schedule-item"><span class="schedule-time">01:30 PM</span><span class="schedule-activity">Lunch</span></div>
+            <div class="schedule-item"><span class="schedule-time">02:10 PM</span><span class="schedule-activity">Rest / Personal Work / Leisure</span></div>
+            <div class="schedule-item"><span class="schedule-time">05:00 PM</span><span class="schedule-activity">Tea & Snacks</span></div>
+            <div class="schedule-item"><span class="schedule-time">05:30 PM</span><span class="schedule-activity">Games & Sports</span></div>
+            <div class="schedule-item"><span class="schedule-time">07:00 PM</span><span class="schedule-activity">Evening Prep</span></div>
+            <div class="schedule-item"><span class="schedule-time">08:30 PM</span><span class="schedule-activity">Dinner</span></div>
+            <div class="schedule-item"><span class="schedule-time">10:00 PM</span><span class="schedule-activity">Lights Out</span></div>
         </div>
     </div></section>`
 };
@@ -286,20 +335,54 @@ PAGES['pastoral'] = {
 // ============ GALLERY ============
 PAGES['gallery'] = {
     title: 'Gallery | Rungta Public School',
-    tag: 'Gallery', heading: 'Our Gallery', sub: 'Capture the moments',
+    tag: 'Gallery', heading: 'Our Gallery', sub: 'Capture the moments. Explore the milestones.',
     render: () => `
     <section class="section"><div class="container">
-        <div class="section-header"><span class="section-tag">Gallery</span><h2 class="section-title">Photos & <em>Albums</em></h2></div>
-        <div class="gallery-filter"><button class="gallery-filter-btn active" data-filter="all">All</button><button class="gallery-filter-btn" data-filter="campus">Campus</button><button class="gallery-filter-btn" data-filter="sports">Sports</button><button class="gallery-filter-btn" data-filter="events">Events</button><button class="gallery-filter-btn" data-filter="academics">Academics</button></div>
+        <div class="section-header"><span class="section-tag">Photo Albums</span><h2 class="section-title">Photos & <em>Albums</em></h2></div>
+        <div class="gallery-filter"><button class="gallery-filter-btn active" data-filter="all">All</button><button class="gallery-filter-btn" data-filter="sports">Sports</button><button class="gallery-filter-btn" data-filter="cultural">Cultural</button><button class="gallery-filter-btn" data-filter="academic">Academic</button><button class="gallery-filter-btn" data-filter="celebration">Celebrations</button><button class="gallery-filter-btn" data-filter="trip">Trips</button></div>
         <div class="gallery-grid">
-            <div class="gallery-item stagger" data-category="campus" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">🏫</span><span class="gallery-label">School Campus</span></div></div>
-            <div class="gallery-item stagger" data-category="sports" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">⚽</span><span class="gallery-label">Sports Day</span></div></div>
-            <div class="gallery-item stagger" data-category="events" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#4174c5,#007efd)"><span class="gallery-emoji">🎉</span><span class="gallery-label">Annual Function</span></div></div>
-            <div class="gallery-item stagger" data-category="academics" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#41604d,#677b6e)"><span class="gallery-emoji">🔬</span><span class="gallery-label">Science Lab</span></div></div>
-            <div class="gallery-item stagger" data-category="campus" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#ffc107,#ffd45d)"><span class="gallery-emoji">📚</span><span class="gallery-label">Library</span></div></div>
-            <div class="gallery-item stagger" data-category="sports" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#7e694c,#a7766f)"><span class="gallery-emoji">🏊</span><span class="gallery-label">Swimming</span></div></div>
-            <div class="gallery-item stagger" data-category="events" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">🎭</span><span class="gallery-label">Cultural Program</span></div></div>
-            <div class="gallery-item stagger" data-category="academics" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#4174c5,#007efd)"><span class="gallery-emoji">💻</span><span class="gallery-label">Computer Lab</span></div></div>
+            <div class="gallery-item stagger" data-category="cultural" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">🎤</span><span class="gallery-label">Hindi Recitation 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="cultural" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">📖</span><span class="gallery-label">English Recitation 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#ffc107,#ffd45d)"><span class="gallery-emoji">🥛</span><span class="gallery-label">Dahi Handi 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="sports" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#41604d,#677b6e)"><span class="gallery-emoji">🏸</span><span class="gallery-label">Badminton 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="cultural" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#7e694c,#a7766f)"><span class="gallery-emoji">💃</span><span class="gallery-label">Solo Dance 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="cultural" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">🎵</span><span class="gallery-label">Music Competition 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">🎨</span><span class="gallery-label">Poster Making 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#ffc107,#ffd45d)"><span class="gallery-emoji">📊</span><span class="gallery-label">PPT Competition 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#41604d,#677b6e)"><span class="gallery-emoji">🧠</span><span class="gallery-label">Quiz Competition 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="trip" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#7e694c,#a7766f)"><span class="gallery-emoji">🎢</span><span class="gallery-label">Primary Picnic Maitri Bagh</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">🗣️</span><span class="gallery-label">Inter School Debate 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="sports" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">🎯</span><span class="gallery-label">Carrom Competition 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#ffc107,#ffd45d)"><span class="gallery-emoji">👶</span><span class="gallery-label">Children's Day 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#41604d,#677b6e)"><span class="gallery-emoji">🐘</span><span class="gallery-label">Ganesh Chaturthi 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#7e694c,#a7766f)"><span class="gallery-emoji">💃</span><span class="gallery-label">Navratri 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">🌳</span><span class="gallery-label">Van Mahotsav 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="trip" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">🦷</span><span class="gallery-label">Visit to Dental Clinic</span></div></div>
+            <div class="gallery-item stagger" data-category="trip" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#ffc107,#ffd45d)"><span class="gallery-emoji">🔬</span><span class="gallery-label">Visit to RSR Lab</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#41604d,#677b6e)"><span class="gallery-emoji">🪈</span><span class="gallery-label">Janmashtami 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#7e694c,#a7766f)"><span class="gallery-emoji">🏛️</span><span class="gallery-label">MUN 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">⚠️</span><span class="gallery-label">Session on Drug Abuse</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">🧘</span><span class="gallery-label">International Yoga Day 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#ffc107,#ffd45d)"><span class="gallery-emoji">👩</span><span class="gallery-label">Women's Day 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#41604d,#677b6e)"><span class="gallery-emoji">🇮🇳</span><span class="gallery-label">Independence Day 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="cultural" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#7e694c,#a7766f)"><span class="gallery-emoji">🍳</span><span class="gallery-label">Fireless Cooking 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">👨</span><span class="gallery-label">Father's Day 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="trip" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">🚌</span><span class="gallery-label">Educational Trip</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#ffc107,#ffd45d)"><span class="gallery-emoji">📝</span><span class="gallery-label">CBSE Active Learning Workshop</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#41604d,#677b6e)"><span class="gallery-emoji">🌿</span><span class="gallery-label">CBP Environmental Education</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#7e694c,#a7766f)"><span class="gallery-emoji">🎓</span><span class="gallery-label">Graduation Day</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">🏅</span><span class="gallery-label">RPS Achievers</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">🎖️</span><span class="gallery-label">Investiture Ceremony 2025</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#ffc107,#ffd45d)"><span class="gallery-emoji">🎂</span><span class="gallery-label">Foundation Day</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#41604d,#677b6e)"><span class="gallery-emoji">👋</span><span class="gallery-label">Farewell 2026</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#7e694c,#a7766f)"><span class="gallery-emoji">🏆</span><span class="gallery-label">Achievements</span></div></div>
+            <div class="gallery-item stagger" data-category="academic" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">🔬</span><span class="gallery-label">Annual Exhibition</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">🎭</span><span class="gallery-label">Annual Day</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#ffc107,#ffd45d)"><span class="gallery-emoji">👴</span><span class="gallery-label">Grand Parent's Day</span></div></div>
+            <div class="gallery-item stagger" data-category="sports" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#41604d,#677b6e)"><span class="gallery-emoji">🏏</span><span class="gallery-label">Indoor & Outdoor Sports</span></div></div>
+            <div class="gallery-item stagger" data-category="celebration" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#7e694c,#a7766f)"><span class="gallery-emoji">👩‍🏫</span><span class="gallery-label">Teacher's Day</span></div></div>
+            <div class="gallery-item stagger" data-category="cultural" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#f13023,#d91900)"><span class="gallery-emoji">💃</span><span class="gallery-label">Cultural Events</span></div></div>
+            <div class="gallery-item stagger" data-category="cultural" data-tilt><div class="gallery-placeholder" style="background:linear-gradient(135deg,#007efd,#4174c5)"><span class="gallery-emoji">🎬</span><span class="gallery-label">Videos</span></div></div>
         </div>
     </div></section>`
 };
@@ -341,6 +424,10 @@ PAGES['faq'] = {
             <div class="faq-item"><button class="faq-question"><span>Does the school give scholarships?</span><i data-lucide="chevron-down"></i></button><div class="faq-answer"><p>Yes, the school gives scholarships to meritorious students of classes XI & XII. Apart from that there are various concessions given to different categories of students.</p></div></div>
             <div class="faq-item"><button class="faq-question"><span>When does the academic session start?</span><i data-lucide="chevron-down"></i></button><div class="faq-answer"><p>The academic session starts in April.</p></div></div>
             <div class="faq-item"><button class="faq-question"><span>How can I pay fees online?</span><i data-lucide="chevron-down"></i></button><div class="faq-answer"><p>Visit <a href="http://myrungta.com/erp/studentindex_rps.php" target="_blank" style="color:var(--primary);font-weight:600">myrungta.com</a> for online fee payment.</p></div></div>
+            <div class="faq-item"><button class="faq-question"><span>How well can students cope with CBSE syllabus if from a different board?</span><i data-lucide="chevron-down"></i></button><div class="faq-answer"><p>There will not be any difficulty as the syllabus of the CBSE is on a par with other Boards. This has been experienced by a large number of students with the help of the dedicated teachers.</p></div></div>
+            <div class="faq-item"><button class="faq-question"><span>How can I register my ward's name for admission?</span><i data-lucide="chevron-down"></i></button><div class="faq-answer"><p>Application forms can be collected from our school office. The duly filled in application form along with the Registration fees, photocopy of the previous three years report cards and other required documents is to be submitted at the school office for the registration.</p></div></div>
+            <div class="faq-item"><button class="faq-question"><span>On what criteria is the admission considered at RPS?</span><i data-lucide="chevron-down"></i></button><div class="faq-answer"><p>RPS welcomes students from India and abroad. The admission is granted on the basis of the last three years academic record.</p></div></div>
+            <div class="faq-item"><button class="faq-question"><span>What are the documents required for admission?</span><i data-lucide="chevron-down"></i></button><div class="faq-answer"><ul><li>Duly filled in Application form</li><li>3 recent passport size photographs of the student & one each of both parents</li><li>Copy of Birth Certificate</li><li>Copy of Aadhar Card</li><li>Non-refundable Registration Fee</li><li>Photocopies of previous two years and half yearly report card</li><li>Transfer Certificate (for class II onwards)</li><li>Character Certificate from previous school</li><li>Bank Account details of the child</li><li>CBSE Registration Card (for classes X, XI, XII)</li></ul></div></div>
         </div>
     </div></section>`
 };
@@ -368,5 +455,52 @@ PAGES['contact'] = {
             </form>
         </div>
         <div class="contact-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.5!2d81.3!3d21.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEyJzAwLjAiTiA4McKwMTgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1" width="100%" height="400" style="border:0;border-radius:16px" allowfullscreen loading="lazy"></iframe></div>
+    </div></section>`
+};
+
+// ============ DOWNLOADS ============
+PAGES['downloads'] = {
+    title: 'Downloads | Rungta Public School',
+    tag: 'Resources', heading: 'Important Downloads', sub: 'Prospectus, Fee Structure, Calendar & more',
+    render: () => `
+    <section class="section"><div class="container">
+        <div class="section-header"><span class="section-tag">Resources</span><h2 class="section-title">Important <em>Downloads</em></h2></div>
+        <div class="card-grid">
+            <a href="https://rungtapublicschool.ac.in/downloads/RPS Prospectus 2023 SP.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">📄</div><h3>Prospectus</h3><p>Download the RPS Prospectus for complete information about the school.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/RPS_fee_2026.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">💰</div><h3>Fee Structure 2026-27</h3><p>Detailed fee structure for Indian students (CBSE).</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/RPS-school-calendar-2026-27.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">📅</div><h3>School Calendar 2026-27</h3><p>Academic calendar with holidays and important dates.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/book_list.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">📚</div><h3>Book List</h3><p>Complete book list for all classes.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/RPS_Newsletter2020.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">📰</div><h3>Newsletter</h3><p>RPS Newsletter with latest updates and achievements.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/HANDBOOK__2020-21.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">📖</div><h3>Handbook for Parents</h3><p>Parent handbook with guidelines and policies.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/RPSboarderDailySchedule.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">⏰</div><h3>Boarder's Daily Schedule</h3><p>Detailed daily schedule for boarding students.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/Tournament Details and Formats.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">🏆</div><h3>Tournament Details</h3><p>Details and formats for sports tournaments.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/result-of-last-three-years.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">📊</div><h3>Results (Last 3 Years)</h3><p>Board examination results of last three years.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/PTA MEMBERS.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">👥</div><h3>PTA Members</h3><p>List of Parent-Teacher Association members.</p></a>
+            <a href="http://myrungta.com/erp/studentindex_rps.php" target="_blank" class="card stagger" data-tilt><div class="card-icon">💳</div><h3>Online Fee Payment</h3><p>Pay school fees online through the ERP portal.</p></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSedSXjN7MioScm3T0EMpqvWgIH7-OtNX12MlHQwE-sWs4urVg/viewform" target="_blank" class="card stagger" data-tilt><div class="card-icon">📝</div><h3>Admission Enquiry Form</h3><p>Fill the online admission enquiry form.</p></a>
+        </div>
+    </div></section>`
+};
+
+// ============ MANDATORY DISCLOSURE ============
+PAGES['disclosure'] = {
+    title: 'Mandatory Disclosure | Rungta Public School',
+    tag: 'Disclosure', heading: 'Mandatory Public Disclosure', sub: 'As per CBSE guidelines',
+    render: () => `
+    <section class="section"><div class="container">
+        <div class="section-header"><span class="section-tag">CBSE Compliance</span><h2 class="section-title">Mandatory Public <em>Disclosure</em></h2></div>
+        <div class="card-grid">
+            <a href="https://rungtapublicschool.ac.in/downloads/self-declaration.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">📋</div><h3>Self Declaration</h3><p>School's self-declaration document.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/extension-afflication.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">🏛️</div><h3>CBSE Extension of Affiliation</h3><p>CBSE affiliation extension certificate.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/RPS_fee_2026.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">💰</div><h3>CBSE Fee Structure 2026-27</h3><p>Fee structure as per CBSE guidelines.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/Mandatory Disclosure Details.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">📄</div><h3>Mandatory Disclosure Details</h3><p>Complete mandatory disclosure document.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/No_objection_certificate.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">✅</div><h3>No Objection Certificate</h3><p>NOC from the state government.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/rps-fire-2026.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">🔥</div><h3>Fire Safety Certificate</h3><p>Fire safety compliance certificate.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/safe-drinking-water-and-sanitation-certification.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">💧</div><h3>Water & Sanitation Certificate</h3><p>Safe drinking water and sanitation certification.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/building-safety-certificate.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">🏗️</div><h3>Building Safety Certificate</h3><p>Building safety compliance certificate.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/land certificate.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">🏞️</div><h3>Land Certificate</h3><p>School land ownership certificate.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/GDR Registration.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">📝</div><h3>GDR Registration</h3><p>G.D. Rungta Educational Society registration.</p></a>
+            <a href="https://rungtapublicschool.ac.in/downloads/extension-afflication.pdf" target="_blank" class="card stagger" data-tilt><div class="card-icon">🔗</div><h3>CBSE Affiliation</h3><p>CBSE affiliation document (No. 3330201).</p></a>
+        </div>
     </div></section>`
 };
