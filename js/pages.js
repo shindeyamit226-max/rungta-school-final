@@ -7,11 +7,17 @@ PAGES['home'] = {
     meta: 'Where learning has a purpose. Best CBSE School in Bhilai-Durg.',
     render: () => `
     <section class="hero" id="hero">
-        <div class="hero-animated-bg"></div>
-        <div class="hero-pattern"></div>
+        <div class="hero-slider">
+            <div class="hero-slide"><img src="images/slider/slide11.jpg" alt="RPS Campus"><div class="hero-slide-overlay"></div></div>
+            <div class="hero-slide"><img src="images/slider/slide12.jpg" alt="RPS Sports"><div class="hero-slide-overlay"></div></div>
+            <div class="hero-slide"><img src="images/slider/slide13.jpg" alt="RPS Activities"><div class="hero-slide-overlay"></div></div>
+            <div class="hero-slide"><img src="images/slider/slide14.jpg" alt="RPS Events"><div class="hero-slide-overlay"></div></div>
+            <div class="hero-slide"><img src="images/slider/slide02.jpg" alt="RPS Campus"><div class="hero-slide-overlay"></div></div>
+            <div class="hero-slide"><img src="images/slider/slide03.jpg" alt="RPS Building"><div class="hero-slide-overlay"></div></div>
+        </div>
         <canvas class="hero-canvas" id="heroCanvas"></canvas>
         <div class="hero-orb hero-orb-1"></div><div class="hero-orb hero-orb-2"></div><div class="hero-orb hero-orb-3"></div>
-        <div class="hero-content">
+        <div class="hero-content hero-glass">
             <div class="floating-badge"><span class="hero-badge-dot"></span><span>Admissions Open 2026-27</span></div>
             <h1 class="hero-title"><span class="hero-title-line"><span class="hero-title-word">Rungta</span></span><span class="hero-title-line"><span class="hero-title-word">Public </span><span class="hero-title-word hero-title-accent">School</span></span></h1>
             <p class="hero-subtitle" id="heroSubtitle"></p>
