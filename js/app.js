@@ -167,7 +167,7 @@ function initHero() {
         constructor() { this.reset(); }
         reset() { this.x = Math.random() * W; this.y = Math.random() * H; this.vx = (Math.random() - 0.5) * 0.5; this.vy = (Math.random() - 0.5) * 0.5; this.r = Math.random() * 2 + 0.5; this.o = Math.random() * 0.5 + 0.2; }
         update() { this.x += this.vx; this.y += this.vy; if (this.x < 0 || this.x > W) this.vx *= -1; if (this.y < 0 || this.y > H) this.vy *= -1; }
-        draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(42,82,152,${this.o})`; ctx.fill(); }
+        draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(0,126,253,${this.o})`; ctx.fill(); }
     }
 
     const count = Math.min(80, Math.floor(W * H / 15000));
@@ -181,7 +181,7 @@ function initHero() {
                 const dx = particles[i].x - particles[j].x, dy = particles[i].y - particles[j].y, d = Math.sqrt(dx * dx + dy * dy);
                 if (d < 150) {
                     ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y);
-                    ctx.strokeStyle = `rgba(42,82,152,${0.1 * (1 - d / 150)})`; ctx.lineWidth = 0.5; ctx.stroke();
+                    ctx.strokeStyle = `rgba(0,126,253,${0.1 * (1 - d / 150)})`; ctx.lineWidth = 0.5; ctx.stroke();
                 }
             }
         }
@@ -241,6 +241,15 @@ window.addEventListener('DOMContentLoaded', () => {
     const menu = document.getElementById('mobileMenu');
     toggle.addEventListener('click', () => { toggle.classList.toggle('active'); menu.classList.toggle('active'); });
     document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => { toggle.classList.remove('active'); menu.classList.remove('active'); }));
+
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        const progressBar = document.getElementById('scrollProgress');
+        if (progressBar) progressBar.style.width = scrollPercent + '%';
+    });
 
     // Back to top
     const btt = document.getElementById('backToTop');
