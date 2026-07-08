@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rungta Public School | Best CBSE School in Bhilai-Durg</title>
+    <meta name="description" content="Rungta Public School - Where learning has a purpose. Best CBSE School in Bhilai-Durg, nurturing brilliance and inspiring excellence.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    
+    <!-- Three.js for 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <span class="preloader-r">R</span>
+                <span class="preloader-p">P</span>
+                <span class="preloader-s">S</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress" id="preloaderProgress"></div>
+            </div>
+            <p class="preloader-text">Where Learning Has A Purpose</p>
+        </div>
+        <div class="preloader-particles" id="preloaderParticles"></div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <div class="nav-logo-icon">
+                    <span>R</span>
+                </div>
+                <div class="nav-logo-text">
+                    <span class="nav-logo-title">Rungta</span>
+                    <span class="nav-logo-sub">Public School</span>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#academics" class="nav-link" data-section="academics">Academics</a>
+                <a href="#sports" class="nav-link" data-section="sports">Sports & Culture</a>
+                <a href="#facilities" class="nav-link" data-section="facilities">Facilities</a>
+                <a href="#pastoral" class="nav-link" data-section="pastoral">Pastoral Care</a>
+                <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://myrungta.com/cricket_academy_registration_form_2025/registration_form.php" target="_blank" class="nav-cta">
+                    <span>Admissions Open</span>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-bg"></div>
+        <div class="mobile-menu-content">
+            <a href="#hero" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#academics" class="mobile-link">Academics</a>
+            <a href="#sports" class="mobile-link">Sports & Culture</a>
+            <a href="#facilities" class="mobile-link">Facilities</a>
+            <a href="#pastoral" class="mobile-link">Pastoral Care</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="https://myrungta.com/cricket_academy_registration_form_2025/registration_form.php" target="_blank" class="mobile-cta">Admissions Open →</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas class="hero-canvas" id="heroCanvas"></canvas>
+        <div class="hero-gradient-orb hero-orb-1"></div>
+        <div class="hero-gradient-orb hero-orb-2"></div>
+        <div class="hero-gradient-orb hero-orb-3"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                <span>Admissions Open 2026-27</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">
+                    <span class="hero-title-word" data-delay="0">Rungta</span>
+                </span>
+                <span class="hero-title-line">
+                    <span class="hero-title-word" data-delay="0.1">Public</span>
+                    <span class="hero-title-word hero-title-accent" data-delay="0.2">School</span>
+                </span>
+            </h1>
+            <p class="hero-subtitle" id="heroSubtitle"></p>
+            <p class="hero-desc">Where learning has a purpose. Nurturing brilliance and inspiring excellence since 1999. Best CBSE School in Bhilai-Durg.</p>
+            <div class="hero-actions">
+                <a href="#about" class="btn btn-primary">
+                    <span>Explore RPS</span>
+                    <i data-lucide="arrow-down"></i>
+                </a>
+                <a href="https://myrungta.com/cricket_academy_registration_form_2025/registration_form.php" target="_blank" class="btn btn-secondary">
+                    <span>Register Now</span>
+                    <i data-lucide="external-link"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="4000">0</span>
+                    <span class="hero-stat-plus">+</span>
+                    <span class="hero-stat-label">Students</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="25">0</span>
+                    <span class="hero-stat-plus">+</span>
+                    <span class="hero-stat-label">Years Legacy</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="100">0</span>
+                    <span class="hero-stat-plus">%</span>
+                    <span class="hero-stat-label">Results</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll-indicator">
+            <div class="hero-scroll-mouse">
+                <div class="hero-scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+        
+        <div class="hero-marquee">
+            <div class="hero-marquee-track">
+                <span>CBSE Affiliated ★ Cambridge Curriculum ★ Smart Classes ★ Sports Excellence ★ Holistic Development ★ Boarding Facilities ★ 4000+ Students ★ Since 1999 ★</span>
+                <span>CBSE Affiliated ★ Cambridge Curriculum ★ Smart Classes ★ Sports Excellence ★ Holistic Development ★ Boarding Facilities ★ 4000+ Students ★ Since 1999 ★</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="section-bg-text">ABOUT</div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">
+                    <span class="section-title-line">We Nurture</span>
+                    <span class="section-title-line"><em>Brilliance.</em> We Inspire</span>
+                    <span class="section-title-line">Excellence.</span>
+                </h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card about-card-main" data-tilt>
+                    <div class="about-card-icon">
+                        <i data-lucide="school"></i>
+                    </div>
+                    <h3>Our Legacy</h3>
+                    <p>Beginning humbly in 1999 with an intake of just 240 students, the G.D. Rungta Educational Society has experienced phenomenal growth. Today, our various institutions proudly educate more than 4,000 students from across the country.</p>
+                    <div class="about-card-shine"></div>
+                </div>
+                
+                <div class="about-card" data-tilt>
+                    <div class="about-card-icon">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>We believe that when students are encouraged to explore their interests, dreams, and inner motivations, they create meaningful stories, ideas, and expressions that help them understand themselves better.</p>
+                    <div class="about-card-shine"></div>
+                </div>
+                
+                <div class="about-card" data-tilt>
+                    <div class="about-card-icon">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <ul class="about-values">
+                        <li><i data-lucide="check-circle"></i> Respect for all</li>
+                        <li><i data-lucide="check-circle"></i> Perseverance</li>
+                        <li><i data-lucide="check-circle"></i> Selfless Service</li>
+                        <li><i data-lucide="check-circle"></i> Creative Thinking</li>
+                        <li><i data-lucide="check-circle"></i> Confidence Building</li>
+                    </ul>
+                    <div class="about-card-shine"></div>
+                </div>
+                
+                <div class="about-card" data-tilt>
+                    <div class="about-card-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Rungta Knowledge City, Kohka-Kurud Road, Bhilai (C.G.) - 490024, India</p>
+                    <div class="about-location-info">
+                        <div class="about-loc-item">
+                            <i data-lucide="plane"></i>
+                            <span>40km from Raipur Airport</span>
+                        </div>
+                        <div class="about-loc-item">
+                            <i data-lucide="train-front"></i>
+                            <span>10-12km from Durg Junction</span>
+                        </div>
+                    </div>
+                    <div class="about-card-shine"></div>
+                </div>
+            </div>
+
+            <!-- Interactive Timeline -->
+            <div class="about-timeline">
+                <h3 class="about-timeline-title">Our Journey</h3>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item" data-year="1999">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">1999</span>
+                            <h4>The Beginning</h4>
+                            <p>Started with just 240 students under G.D. Rungta Educational Society</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2005">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2005</span>
+                            <h4>CBSE Affiliation</h4>
+                            <p>Received CBSE affiliation, establishing academic credibility</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2015">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2015</span>
+                            <h4>Cambridge Curriculum</h4>
+                            <p>Introduced Cambridge International Curriculum for global exposure</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2020">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2020</span>
+                            <h4>Digital Transformation</h4>
+                            <p>Smart classes and digital learning infrastructure upgraded</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2026">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2026</span>
+                            <h4>4000+ Strong</h4>
+                            <p>Over 4,000 students across the country, a legacy of excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section class="section academics" id="academics">
+        <div class="section-bg-text">ACADEMICS</div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Excellence in Education</span>
+                <h2 class="section-title">
+                    <span class="section-title-line">Comprehensive</span>
+                    <span class="section-title-line">Academic <em>Programs</em></span>
+                </h2>
+                <p class="section-desc">Student-centric teaching, qualified faculty ensuring competitive success and lifelong learning.</p>
+            </div>
+            
+            <div class="academics-tabs">
+                <button class="academics-tab active" data-tab="cbse">
+                    <i data-lucide="book-open"></i>
+                    <span>CBSE Curriculum</span>
+                </button>
+                <button class="academics-tab" data-tab="cambridge">
+                    <i data-lucide="globe"></i>
+                    <span>Cambridge Curriculum</span>
+                </button>
+                <button class="academics-tab" data-tab="smart">
+                    <i data-lucide="monitor"></i>
+                    <span>Smart Classes</span>
+                </button>
+                <button class="academics-tab" data-tab="assessment">
+                    <i data-lucide="clipboard-check"></i>
+                    <span>Assessment</span>
+                </button>
+            </div>
+            
+            <div class="academics-panels">
+                <div class="academics-panel active" id="panel-cbse">
+                    <div class="academics-panel-content">
+                        <div class="academics-panel-text">
+                            <h3>CBSE Curriculum</h3>
+                            <p>Our CBSE curriculum follows the National Education Framework, emphasizing holistic development through a balanced approach to academics, co-curricular activities, and life skills education.</p>
+                            <ul class="academics-features">
+                                <li><i data-lucide="sparkles"></i> Playgroup to Class XII</li>
+                                <li><i data-lucide="sparkles"></i> Activity-based Learning</li>
+                                <li><i data-lucide="sparkles"></i> STEM Education Focus</li>
+                                <li><i data-lucide="sparkles"></i> Competitive Exam Preparation</li>
+                                <li><i data-lucide="sparkles"></i> Regular Parent-Teacher Interaction</li>
+                            </ul>
+                        </div>
+                        <div class="academics-panel-visual">
+                            <div class="academics-visual-card">
+                                <div class="academics-visual-icon">📚</div>
+                                <h4>Classes Offered</h4>
+                                <div class="class-grid">
+                                    <span>Playgroup</span><span>Nursery</span><span>I</span><span>II</span>
+                                    <span>III</span><span>IV</span><span>V</span><span>VI</span>
+                                    <span>VII</span><span>VIII</span><span>IX</span><span>X</span>
+                                    <span>XI</span><span>XII</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="academics-panel" id="panel-cambridge">
+                    <div class="academics-panel-content">
+                        <div class="academics-panel-text">
+                            <h3>Cambridge International</h3>
+                            <p>The Cambridge curriculum provides an international perspective on education, developing learners who are confident, responsible, reflective, innovative, and engaged.</p>
+                            <ul class="academics-features">
+                                <li><i data-lucide="sparkles"></i> Global Recognition</li>
+                                <li><i data-lucide="sparkles"></i> Critical Thinking Focus</li>
+                                <li><i data-lucide="sparkles"></i> International Standards</li>
+                                <li><i data-lucide="sparkles"></i> Research-based Approach</li>
+                            </ul>
+                        </div>
+                        <div class="academics-panel-visual">
+                            <div class="academics-visual-card">
+                                <div class="academics-visual-icon">🌍</div>
+                                <h4>Cambridge Pathway</h4>
+                                <p>Preparing students for global universities with internationally benchmarked qualifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="academics-panel" id="panel-smart">
+                    <div class="academics-panel-content">
+                        <div class="academics-panel-text">
+                            <h3>Smart Classes</h3>
+                            <p>Technology-enabled classrooms with interactive whiteboards, digital content, and multimedia resources that make learning engaging and effective.</p>
+                            <ul class="academics-features">
+                                <li><i data-lucide="sparkles"></i> Interactive Whiteboards</li>
+                                <li><i data-lucide="sparkles"></i> Digital Content Library</li>
+                                <li><i data-lucide="sparkles"></i> Audio-Visual Learning</li>
+                                <li><i data-lucide="sparkles"></i> Online Resources</li>
+                            </ul>
+                        </div>
+                        <div class="academics-panel-visual">
+                            <div class="academics-visual-card">
+                                <div class="academics-visual-icon">💻</div>
+                                <h4>Digital Learning</h4>
+                                <p>Modern technology integrated into every classroom for immersive learning experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="academics-panel" id="panel-assessment">
+                    <div class="academics-panel-content">
+                        <div class="academics-panel-text">
+                            <h3>Assessment & Evaluation</h3>
+                            <p>Continuous and comprehensive evaluation system that focuses on holistic development rather than rote learning.</p>
+                            <ul class="academics-features">
+                                <li><i data-lucide="sparkles"></i> Continuous Assessment</li>
+                                <li><i data-lucide="sparkles"></i> Portfolio-based Evaluation</li>
+                                <li><i data-lucide="sparkles"></i> Skill-based Testing</li>
+                                <li><i data-lucide="sparkles"></i> Progress Tracking</li>
+                            </ul>
+                        </div>
+                        <div class="academics-panel-visual">
+                            <div class="academics-visual-card">
+                                <div class="academics-visual-icon">📊</div>
+                                <h4>Results</h4>
+                                <p>Consistent 100% results with students excelling in board examinations year after year.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Programs -->
+            <div class="academics-programs">
+                <div class="program-card" data-tilt>
+                    <div class="program-icon">🧠</div>
+                    <h4>Learning Support</h4>
+                    <p>Personalized attention for every learner with dedicated support programs.</p>
+                </div>
+                <div class="program-card" data-tilt>
+                    <div class="program-icon">📖</div>
+                    <h4>English Language</h4>
+                    <p>Comprehensive English as a Second Language program for fluency.</p>
+                </div>
+                <div class="program-card" data-tilt>
+                    <div class="program-icon">🌱</div>
+                    <h4>Holistic Learning</h4>
+                    <p>Beyond academics — developing the whole child through diverse activities.</p>
+                </div>
+                <div class="program-card" data-tilt>
+                    <div class="program-icon">👩‍🏫</div>
+                    <h4>Teacher Training</h4>
+                    <p>Continuous professional development for our educators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports & Culture Section -->
+    <section class="section sports" id="sports">
+        <div class="section-bg-text">SPORTS</div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Beyond Academics</span>
+                <h2 class="section-title">
+                    <span class="section-title-line">Sports &</span>
+                    <span class="section-title-line"><em>Culture</em></span>
+                </h2>
+                <p class="section-desc">Equal emphasis on Sports and Cultural activities for Child Progression. Shaping Behaviour through Moral Values, modern Infrastructure, and Individual Attention.</p>
+            </div>
+            
+            <div class="sports-showcase">
+                <div class="sports-card" data-tilt>
+                    <div class="sports-card-bg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="sports-card-pattern"></div>
+                    </div>
+                    <div class="sports-card-content">
+                        <div class="sports-card-icon">⚽</div>
+                        <h3>Games & Sports</h3>
+                        <p>Cricket, Football, Basketball, Athletics, Swimming, and more with professional coaching.</p>
+                        <div class="sports-card-tags">
+                            <span>Cricket</span><span>Football</span><span>Basketball</span><span>Athletics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports-card" data-tilt>
+                    <div class="sports-card-bg" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="sports-card-pattern"></div>
+                    </div>
+                    <div class="sports-card-content">
+                        <div class="sports-card-icon">🎭</div>
+                        <h3>Performing Arts</h3>
+                        <p>Music, Dance, Drama, and Theatre programs nurturing creative expression.</p>
+                        <div class="sports-card-tags">
+                            <span>Music</span><span>Dance</span><span>Drama</span><span>Theatre</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports-card" data-tilt>
+                    <div class="sports-card-bg" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="sports-card-pattern"></div>
+                    </div>
+                    <div class="sports-card-content">
+                        <div class="sports-card-icon">🏆</div>
+                        <h3>Tournaments & Meets</h3>
+                        <p>Regular inter-school and intra-school competitions fostering sportsmanship.</p>
+                        <div class="sports-card-tags">
+                            <span>Inter-School</span><span>Intra-School</span><span>State Level</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports-card" data-tilt>
+                    <div class="sports-card-bg" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <div class="sports-card-pattern"></div>
+                    </div>
+                    <div class="sports-card-content">
+                        <div class="sports-card-icon">🎪</div>
+                        <h3>Festivals & Celebrations</h3>
+                        <p>Cultural festivals, national celebrations, and community events throughout the year.</p>
+                        <div class="sports-card-tags">
+                            <span>Cultural</span><span>National</span><span>Community</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports-card" data-tilt>
+                    <div class="sports-card-bg" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="sports-card-pattern"></div>
+                    </div>
+                    <div class="sports-card-content">
+                        <div class="sports-card-icon">🚌</div>
+                        <h3>Field Trips & Excursions</h3>
+                        <p>Educational trips and excursions for experiential learning beyond classroom.</p>
+                        <div class="sports-card-tags">
+                            <span>Educational</span><span>Adventure</span><span>Exploration</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sports-card" data-tilt>
+                    <div class="sports-card-bg" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                        <div class="sports-card-pattern"></div>
+                    </div>
+                    <div class="sports-card-content">
+                        <div class="sports-card-icon">🏠</div>
+                        <h3>House System</h3>
+                        <p>Four houses promoting healthy competition, leadership, and team spirit.</p>
+                        <div class="sports-card-tags">
+                            <span>Leadership</span><span>Team Spirit</span><span>Competition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- House System Visualization -->
+            <div class="houses-section">
+                <h3 class="houses-title">Our Four Houses</h3>
+                <div class="houses-grid">
+                    <div class="house-card" data-tilt>
+                        <div class="house-color" style="background: #e74c3c;"></div>
+                        <h4>🔴 Ruby House</h4>
+                        <p>Courage & Determination</p>
+                    </div>
+                    <div class="house-card" data-tilt>
+                        <div class="house-color" style="background: #3498db;"></div>
+                        <h4>🔵 Sapphire House</h4>
+                        <p>Wisdom & Loyalty</p>
+                    </div>
+                    <div class="house-card" data-tilt>
+                        <div class="house-color" style="background: #2ecc71;"></div>
+                        <h4>🟢 Emerald House</h4>
+                        <p>Growth & Harmony</p>
+                    </div>
+                    <div class="house-card" data-tilt>
+                        <div class="house-color" style="background: #f39c12;"></div>
+                        <h4>🟡 Topaz House</h4>
+                        <p>Energy & Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="section facilities" id="facilities">
+        <div class="section-bg-text">CAMPUS</div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">World-Class Infrastructure</span>
+                <h2 class="section-title">
+                    <span class="section-title-line">Our</span>
+                    <span class="section-title-line"><em>Facilities</em></span>
+                </h2>
+            </div>
+            
+            <div class="facilities-grid">
+                <div class="facility-card facility-card-large" data-tilt>
+                    <div class="facility-icon">🔬</div>
+                    <h3>Laboratories</h3>
+                    <p>State-of-the-art Physics, Chemistry, Biology, and Computer labs with modern equipment for hands-on learning.</p>
+                    <div class="facility-card-glow"></div>
+                </div>
+                
+                <div class="facility-card" data-tilt>
+                    <div class="facility-icon">📚</div>
+                    <h3>Library</h3>
+                    <p>Extensive library with thousands of books, journals, and digital resources.</p>
+                    <div class="facility-card-glow"></div>
+                </div>
+                
+                <div class="facility-card" data-tilt>
+                    <div class="facility-icon">🏥</div>
+                    <h3>Health & Medical</h3>
+                    <p>On-campus medical facility with qualified nursing staff and regular health checkups.</p>
+                    <div class="facility-card-glow"></div>
+                </div>
+                
+                <div class="facility-card" data-tilt>
+                    <div class="facility-icon">🛡️</div>
+                    <h3>Safety & Security</h3>
+                    <p>24/7 CCTV surveillance, secure campus access, and trained security personnel.</p>
+                    <div class="facility-card-glow"></div>
+                </div>
+                
+                <div class="facility-card" data-tilt>
+                    <div class="facility-icon">🍽️</div>
+                    <h3>Food & Beverages</h3>
+                    <p>Nutritious meals prepared in hygienic kitchen with balanced menu options.</p>
+                    <div class="facility-card-glow"></div>
+                </div>
+                
+                <div class="facility-card" data-tilt>
+                    <div class="facility-icon">🛍️</div>
+                    <h3>Tuck Shop</h3>
+                    <p>On-campus shop for stationery, snacks, and daily essentials.</p>
+                    <div class="facility-card-glow"></div>
+                </div>
+                
+                <div class="facility-card" data-tilt>
+                    <div class="facility-icon">👕</div>
+                    <h3>Laundry</h3>
+                    <p>Professional laundry services for boarders ensuring clean uniforms daily.</p>
+                    <div class="facility-card-glow"></div>
+                </div>
+                
+                <div class="facility-card facility-card-large" data-tilt>
+                    <div class="facility-icon">🖥️</div>
+                    <h3>Smart Classrooms</h3>
+                    <p>Technology-enabled classrooms with interactive boards, projectors, and digital learning tools for an immersive educational experience.</p>
+                    <div class="facility-card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pastoral Care Section -->
+    <section class="section pastoral" id="pastoral">
+        <div class="section-bg-text">CARE</div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Home Away From Home</span>
+                <h2 class="section-title">
+                    <span class="section-title-line">Pastoral</span>
+                    <span class="section-title-line"><em>Care</em></span>
+                </h2>
+                <p class="section-desc">A safe, secure, caring, and stress-free environment where boarders truly feel they are in a home away from home.</p>
+            </div>
+            
+            <div class="pastoral-features">
+                <div class="pastoral-card" data-tilt>
+                    <div class="pastoral-card-number">01</div>
+                    <div class="pastoral-card-icon">🏠</div>
+                    <h3>Boarding Houses</h3>
+                    <p>Comfortable and well-maintained boarding houses with dedicated House Parents providing continuous support and personalized attention.</p>
+                </div>
+                
+                <div class="pastoral-card" data-tilt>
+                    <div class="pastoral-card-number">02</div>
+                    <div class="pastoral-card-icon">💬</div>
+                    <h3>Communication</h3>
+                    <p>Regular communication channels between parents, house parents, and students ensuring transparency and involvement.</p>
+                </div>
+                
+                <div class="pastoral-card" data-tilt>
+                    <div class="pastoral-card-number">03</div>
+                    <div class="pastoral-card-icon">🍎</div>
+                    <h3>Food Policy</h3>
+                    <p>Balanced and nutritious meal plans designed by nutritionists, catering to diverse dietary needs.</p>
+                </div>
+                
+                <div class="pastoral-card" data-tilt>
+                    <div class="pastoral-card-number">04</div>
+                    <div class="pastoral-card-icon">🙏</div>
+                    <h3>Spiritual Life</h3>
+                    <p>Moral education and spiritual development programs fostering values, ethics, and inner peace.</p>
+                </div>
+                
+                <div class="pastoral-card" data-tilt>
+                    <div class="pastoral-card-number">05</div>
+                    <div class="pastoral-card-icon">💝</div>
+                    <h3>Emotional Support</h3>
+                    <p>Counseling services and emotional support systems ensuring mental well-being of every student.</p>
+                </div>
+                
+                <div class="pastoral-card" data-tilt>
+                    <div class="pastoral-card-number">06</div>
+                    <div class="pastoral-card-icon">👨‍🏫</div>
+                    <h3>House Masters & Dames</h3>
+                    <p>Experienced and caring house masters and dames who maintain discipline while focusing on academic progression.</p>
+                </div>
+            </div>
+            
+            <!-- Daily Schedule -->
+            <div class="pastoral-schedule">
+                <h3>Boarder's Daily Schedule</h3>
+                <div class="schedule-timeline">
+                    <div class="schedule-item">
+                        <span class="schedule-time">06:00 AM</span>
+                        <span class="schedule-activity">Wake Up & Morning Exercise</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">07:00 AM</span>
+                        <span class="schedule-activity">Breakfast</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">08:00 AM</span>
+                        <span class="schedule-activity">School Begins</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">01:00 PM</span>
+                        <span class="schedule-activity">Lunch Break</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">03:30 PM</span>
+                        <span class="schedule-activity">School Ends / Activities</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">05:00 PM</span>
+                        <span class="schedule-activity">Sports & Recreation</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">07:00 PM</span>
+                        <span class="schedule-activity">Evening Snacks & Prep</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">08:30 PM</span>
+                        <span class="schedule-activity">Dinner</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">10:00 PM</span>
+                        <span class="schedule-activity">Lights Out</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="section-bg-text">MOMENTS</div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Capture The Moments</span>
+                <h2 class="section-title">
+                    <span class="section-title-line">Our</span>
+                    <span class="section-title-line"><em>Gallery</em></span>
+                </h2>
+                <p class="section-desc">Explore the milestones of learning, development, and celebration at Rungta Public School.</p>
+            </div>
+            
+            <div class="gallery-filter">
+                <button class="gallery-filter-btn active" data-filter="all">All</button>
+                <button class="gallery-filter-btn" data-filter="campus">Campus</button>
+                <button class="gallery-filter-btn" data-filter="sports">Sports</button>
+                <button class="gallery-filter-btn" data-filter="events">Events</button>
+                <button class="gallery-filter-btn" data-filter="academics">Academics</button>
+            </div>
+            
+            <div class="gallery-masonry" id="galleryGrid">
+                <div class="gallery-item" data-category="campus" data-tilt>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <span class="gallery-emoji">🏫</span>
+                        <span class="gallery-label">School Campus</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports" data-tilt>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <span class="gallery-emoji">⚽</span>
+                        <span class="gallery-label">Sports Day</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events" data-tilt>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <span class="gallery-emoji">🎉</span>
+                        <span class="gallery-label">Annual Function</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academics" data-tilt>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                        <span class="gallery-emoji">🔬</span>
+                        <span class="gallery-label">Science Lab</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campus" data-tilt>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                        <span class="gallery-emoji">📚</span>
+                        <span class="gallery-label">Library</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports" data-tilt>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+                        <span class="gallery-emoji">🏊</span>
+                        <span class="gallery-label">Swimming</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events" data-tilt>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
+                        <span class="gallery-emoji">🎭</span>
+                        <span class="gallery-label">Cultural Program</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="academics" data-tilt>
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
+                        <span class="gallery-emoji">💻</span>
+                        <span class="gallery-label">Computer Lab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section leadership" id="leadership">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Guiding Vision</span>
+                <h2 class="section-title">
+                    <span class="section-title-line">Our</span>
+                    <span class="section-title-line"><em>Leadership</em></span>
+                </h2>
+            </div>
+            
+            <div class="leadership-grid">
+                <div class="leader-card" data-tilt>
+                    <div class="leader-avatar">
+                        <div class="leader-avatar-placeholder">SR</div>
+                        <div class="leader-avatar-ring"></div>
+                    </div>
+                    <h3>Sanjay Rungta</h3>
+                    <span class="leader-role">Chairman</span>
+                    <p>Guiding the institution with vision and commitment to educational excellence.</p>
+                </div>
+                
+                <div class="leader-card" data-tilt>
+                    <div class="leader-avatar">
+                        <div class="leader-avatar-placeholder">SR</div>
+                        <div class="leader-avatar-ring"></div>
+                    </div>
+                    <h3>Saket Rungta</h3>
+                    <span class="leader-role">Director</span>
+                    <p>Driving innovation and growth across the Rungta educational ecosystem.</p>
+                </div>
+                
+                <div class="leader-card" data-tilt>
+                    <div class="leader-avatar">
+                        <div class="leader-avatar-placeholder">DS</div>
+                        <div class="leader-avatar-ring"></div>
+                    </div>
+                    <h3>Mrs. Deepti Singh</h3>
+                    <span class="leader-role">Principal</span>
+                    <p>Leading with passion, ensuring every child receives the best education and care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Milestones</span>
+                <h2 class="section-title">
+                    <span class="section-title-line">Our</span>
+                    <span class="section-title-line"><em>Achievements</em></span>
+                </h2>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card" data-tilt>
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-number" data-target="100">0</div>
+                    <div class="achievement-suffix">%</div>
+                    <h4>Board Results</h4>
+                    <p>Consistent 100% pass rate in CBSE Board Examinations</p>
+                </div>
+                
+                <div class="achievement-card" data-tilt>
+                    <div class="achievement-icon">🥇</div>
+                    <div class="achievement-number" data-target="50">0</div>
+                    <div class="achievement-suffix">+</div>
+                    <h4>Sports Awards</h4>
+                    <p>Multiple state and national level sports achievements</p>
+                </div>
+                
+                <div class="achievement-card" data-tilt>
+                    <div class="achievement-icon">🎖️</div>
+                    <div class="achievement-number" data-target="200">0</div>
+                    <div class="achievement-suffix">+</div>
+                    <h4>Academic Awards</h4>
+                    <p>Students excelling in Olympiads and competitive exams</p>
+                </div>
+                
+                <div class="achievement-card" data-tilt>
+                    <div class="achievement-icon">🌟</div>
+                    <div class="achievement-number" data-target="25">0</div>
+                    <div class="achievement-suffix">+</div>
+                    <h4>Years of Excellence</h4>
+                    <p>A legacy of educational excellence since 1999</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-bg-text">CONNECT</div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">
+                    <span class="section-title-line">Contact</span>
+                    <span class="section-title-line"><em>Us</em></span>
+                </h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-card" data-tilt>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Rungta Public School<br>Rungta Knowledge City<br>Kohka-Kurud Road, Bhilai (C.G.)<br>India - 490024</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+918085111555">+91 808 511 1555</a></p>
+                                <p><a href="tel:+917882960666">+91 788 296 0666</a></p>
+                                <p><a href="tel:+919229344486">+91 922 934 4486</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@rungtapublicschool.ac.in">info@rungtapublicschool.ac.in</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <a href="https://www.facebook.com/rungtapublicschool/" target="_blank" class="social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="https://in.linkedin.com/company/rungta-public-school" target="_blank" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="https://www.youtube.com/channel/UCLFKF4aEnl0MbTG_n_waYSw" target="_blank" class="social-link" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+                                <div class="form-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="query">Query Type</label>
+                            <select id="query" name="query">
+                                <option value="">Select Query Type</option>
+                                <option value="general">General Enquiry</option>
+                                <option value="admission">Admission</option>
+                                <option value="career">Career</option>
+                            </select>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.5!2d81.3!3d21.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEyJzAwLjAiTiA4McKwMTgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1" width="100%" height="400" style="border:0; border-radius: 16px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-particles" id="ctaParticles"></div>
+                <div class="cta-content">
+                    <h2>Ready to Join the Rungta Family?</h2>
+                    <p>Admissions are now open for Classes Playgroup to IX & XI for both CBSE and Cambridge curricula.</p>
+                    <div class="cta-actions">
+                        <a href="https://myrungta.com/cricket_academy_registration_form_2025/registration_form.php" target="_blank" class="btn btn-primary btn-lg">
+                            <span>Register Online</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="tel:+919229344486" class="btn btn-outline btn-lg">
+                            <i data-lucide="phone"></i>
+                            <span>Call 9229344486</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,60 1440,80 L1440,120 L0,120 Z" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="nav-logo-icon"><span>R</span></div>
+                        <div>
+                            <span class="nav-logo-title">Rungta Public School</span>
+                            <span class="nav-logo-sub">Where Learning Has A Purpose</span>
+                        </div>
+                    </div>
+                    <p>Nurturing brilliance and inspiring excellence since 1999. Part of the G.D. Rungta Educational Society.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/rungtapublicschool/" target="_blank" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="https://in.linkedin.com/company/rungta-public-school" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCLFKF4aEnl0MbTG_n_waYSw" target="_blank" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About RPS</a>
+                    <a href="#academics">Academics</a>
+                    <a href="#sports">Sports & Culture</a>
+                    <a href="#facilities">Facilities</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Academics</h4>
+                    <a href="#">CBSE Curriculum</a>
+                    <a href="#">Cambridge Curriculum</a>
+                    <a href="#">Smart Classes</a>
+                    <a href="#">Learning Programs</a>
+                    <a href="#">Teacher Training</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="#">Prospectus</a>
+                    <a href="#">Fee Structure</a>
+                    <a href="#">School Calendar</a>
+                    <a href="#">Book List</a>
+                    <a href="#">FAQ</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <a href="tel:+918085111555">+91 808 511 1555</a>
+                    <a href="tel:+917882960666">+91 788 296 0666</a>
+                    <a href="mailto:info@rungtapublicschool.ac.in">info@rungtapublicschool.ac.in</a>
+                    <a href="#">Online Fee Payment</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rungta Public School. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Mandatory Disclosure</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i data-lucide="sun" class="theme-icon-light"></i>
+        <i data-lucide="moon" class="theme-icon-dark"></i>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
